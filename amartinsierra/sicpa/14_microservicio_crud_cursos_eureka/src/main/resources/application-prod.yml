@@ -1,0 +1,20 @@
+clave: 12345
+server:
+  port: 8930
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: root
+    url: jdbc:postgresql://192.3.4.120:5432/academy
+    username: dsfds_r
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  application:
+    name: servicio-cursos
+eureka:
+  instance:
+    instance-id: cursos1
+  client:
+    service-url:
+      defaultZone: http://123.983.40:8761/eureka

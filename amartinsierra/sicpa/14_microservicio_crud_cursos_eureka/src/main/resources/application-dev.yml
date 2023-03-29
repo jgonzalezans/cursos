@@ -1,0 +1,20 @@
+clave: 12345
+server:
+  port: 7000
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: root
+    url: jdbc:postgresql://localhost:5432/academy
+    username: postgres
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  application:
+    name: servicio-cursos
+eureka:
+  instance:
+    instance-id: cursos1
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
